@@ -1,0 +1,30 @@
+node_modules/
+dist/
+.astro/
+.env*
+!.env.api.example
+!.env.inbox.example
+.dev.vars
+!.dev.vars.example
+*.local
+.vscode/
+
+# Generated Cloudflare Worker configs — the tracked templates are the
+# *.example.jsonc files; the setup scripts generate these with real resource IDs.
+services/email-worker/wrangler.jsonc
+services/inbox-worker/wrangler.jsonc
+.DS_Store
+*.log
+.tanstack/
+services/email-ui/src/routeTree.gen.ts
+services/inbox-ui/src/routeTree.gen.ts
+scripts/config.toml
+**/.wrangler
+**/.localflare
+*.tsbuildinfo
+
+# Compiled output from services/emails (safety net if tsc writes into src/)
+services/emails/src/**/*.js
+services/emails/src/**/*.js.map
+services/emails/src/**/*.d.ts
+services/emails/src/**/*.d.ts.map
